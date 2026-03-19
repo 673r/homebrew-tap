@@ -9,18 +9,8 @@ url "https://github.com/673r/LogicProDiscordRPC/releases/download/v#{version}/Lo
 
   app "LogicRPC.app"
 
-  # Kurulum sonrası otomasyon
   postflight do
-    # 1. Önce karantinayı otomatik kaldır
-    system_command "xattr",
-                   args: ["-cr", "#{appdir}/LogicRPC.app"],
-                   sudo: false,
-                   must_succeed: false
-
-    # 2. Ardından yerel (ad-hoc) imza at
-    system_command "codesign",
-                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/LogicRPC.app"],
-                   sudo: false,
-                   must_succeed: false
+    system_command "xattr", args: ["-cr", "#{appdir}/LogicRPC.app"], sudo: false, must_succeed: false
+    system_command "codesign", args: ["--force", "--deep", "--sign", "-", "#{appdir}/LogicRPC.app"], sudo: false, must_succeed: false
   end
 end
