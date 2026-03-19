@@ -7,7 +7,7 @@ url "https://github.com/673r/LogicProDiscordRPC/releases/download/v#{version}/Lo
   desc "Discord Rich Presence for Logic Pro"
   homepage "https://github.com/673r/LogicProDiscordRPC"
 
-  app "LogicProDiscordRPC.app"
+  app "LogicRPC.app"
 
   # Kurulum sonrası otomasyon
   postflight do
