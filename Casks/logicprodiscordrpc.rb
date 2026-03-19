@@ -1,6 +1,6 @@
 cask "logicprodiscordrpc" do
   version "1.0.0" 
-  sha256 "59d3e725b6bdcd177661c6a34ec6c5cc825d60b7c099b940283b56b20e43e09c"
+  sha256 "f86b214e886cb60a197980989da8b40f6ff38f154db316ba10ea1cd365c83287"
 
 url "https://github.com/673r/LogicProDiscordRPC/releases/download/v#{version}/LogicProDiscordRPC.zip"
   name "Logic Pro Discord RPC"
